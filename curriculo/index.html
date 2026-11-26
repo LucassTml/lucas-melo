@@ -1,311 +1,128 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<!--
-  Curriculo de Lucas Melo - edicao 1996.
-  Escrito a mao em HTML 3.2: tabelas, <font> e atributos de apresentacao.
-  Nenhuma linha de CSS. Nenhuma linha de JavaScript. De proposito.
--->
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=700">
-<meta name="description" content="Curr&iacute;culo de Lucas Melo, estudante de Engenharia da Computa&ccedil;&atilde;o na UPE, em Recife.">
-<meta name="author" content="Lucas Melo">
-<meta name="generator" content="Teclado e paci&ecirc;ncia">
-<title>Curr&iacute;culo - Lucas Melo (edi&ccedil;&atilde;o 1996)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucas Melo - Currículo</title>
+<meta name="description" content="Currículo de Lucas Melo, estudante de Engenharia da Computação na UPE, em Recife.">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<style>
+  html { background: #fdf3d8; }
+  body { max-width: 680px; margin: 0 auto; padding: 12px 16px 32px; overflow-wrap: anywhere; }
+  header { text-align: center; }
+  h1 { margin: 6px 0 0; }
+  header p { margin: .25em 0; }
+  nav { padding: 14px 0; border-bottom: 1.5px solid #000; }
+  table { width: 100%; }
+  table, th, td { border: 1px solid #000; border-collapse: collapse; padding: 4px 6px; vertical-align: top; overflow-wrap: normal; }
+  th { text-align: left; }
+  hr { border: 0; border-top: 1.5px solid #000; }
+  a { color: #044c9f; }
+  @media (max-width: 420px) { body { padding: 10px 10px 28px; } th, td { padding: 3px 4px; } }
+</style>
 </head>
 
-<body bgcolor="#C0C0C0" text="#000000" link="#0000EE" vlink="#551A8B" alink="#FF0000">
-<a name="topo"></a>
-<center>
+<body>
 
-<table width="660" border="0" cellpadding="0" cellspacing="0">
-<tr><td>
+<tt>a casa do lucas na internet. o design é assim de propósito.</tt>
 
-<!-- Barra de titulo -->
-<table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#000080">
-<tr>
-  <td><font face="Arial,Helvetica" size="2" color="#FFFFFF"><b>LUCAS MELO :: CURRICULUM VITAE</b></font></td>
-  <td align="right"><font face="Arial,Helvetica" size="2" color="#FFFFFF">Recife, PE - Brasil</font></td>
-</tr>
+<header>
+  <p><img src="https://avatars.githubusercontent.com/u/61882848?v=4&amp;s=200" width="96" height="96" alt="Foto de Lucas Melo" style="border:1px solid #000"></p>
+  <h1>Lucas Melo</h1>
+  <p>Estudante de Engenharia da Computação</p>
+  <p>Universidade de Pernambuco (UPE), Escola Politécnica, 2024 a 2029</p>
+  <nav>
+    <a href="#trajetoria">Trajetória</a> &nbsp;
+    <a href="#projetos">Projetos</a> &nbsp;
+    <a href="#conhecimentos">Conhecimentos</a> &nbsp;
+    <a href="#contato">Contato</a> &nbsp;
+    <a href="https://github.com/LucassTml">GitHub</a> &nbsp;
+    <a href="https://www.linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311/">LinkedIn</a>
+  </nav>
+</header>
+
+<p>
+Programo principalmente em C e Python, quase sempre em Unix. Já fiz bastante coisa de web, front e back-end,
+e uso Docker e n8n para conteinerizar e automatizar o que dá.
+</p>
+<p>
+Hoje passo a maior parte do tempo com IA rodando localmente: LLMs na minha própria máquina, agentes,
+skills, servidores MCP e uso de ferramentas. O que eu mais gosto é da engenharia do processo:
+entender como cada etapa funciona, seja polindo um app pequeno ou montando um sistema maior.
+</p>
+
+<h2 id="trajetoria">Trajetória</h2>
+<table>
+  <tr><th>Ano</th><th>Onde</th><th>O quê</th><th>Resultado</th></tr>
+  <tr>
+    <td>2020&ndash;2023</td>
+    <td>Colégio Cognitivo</td>
+    <td>Ensino médio</td>
+    <td>Concluído</td>
+  </tr>
+  <tr>
+    <td>2022</td>
+    <td>Britanic</td>
+    <td>Curso de inglês</td>
+    <td>Certificado de conclusão; inglês avançado</td>
+  </tr>
+  <tr>
+    <td>2024&ndash;2029</td>
+    <td>UPE, Escola Politécnica</td>
+    <td>Engenharia da Computação</td>
+    <td>Cursando. Na Equipe Astro, em Teoria dos Grafos, modelei o problema da <a href="https://github.com/LucassTml/Grade-Horaria-UPE-Modelagem_Problema_Grafos">grade horária</a></td>
+  </tr>
+  <tr>
+    <td>2026</td>
+    <td>Visagio</td>
+    <td>RocketLab 2026.2, trilhas de dados e desenvolvimento</td>
+    <td><a href="https://github.com/LucassTml/CineData-Analytics-DataBricks">Arquitetura medalhão</a>, <a href="https://github.com/LucassTml/GenAI-WebInterface-RocketLab-2026_2">agente Text-to-SQL</a> e <a href="https://github.com/LucassTml/CineLab_RocketLab2026.2">site full-stack</a></td>
+  </tr>
+  <tr>
+    <td>Agora</td>
+    <td>Recife</td>
+    <td>IA local: LLMs, agentes, MCP</td>
+    <td><b>Ferramentas para agentes de código e modelos locais</b></td>
+  </tr>
 </table>
 
-<!-- Folha -->
-<table width="100%" border="1" cellpadding="18" cellspacing="0" bgcolor="#FFFFFF">
-<tr><td>
+<h2 id="projetos">Projetos</h2>
+<p>
+<a href="https://github.com/LucassTml/audian">Audian</a>: ditado por voz para Windows que roda offline, com Whisper e um LLM pequeno. Rust.<br>
+<a href="https://github.com/LucassTml/OpenlyAntigravity">OpenlyAntigravity</a>: plugin do OpenCode que usa o Antigravity (agy) do terminal como agente, sem chave de API. JavaScript.<br>
+<a href="https://github.com/LucassTml/GenAI-WebInterface-RocketLab-2026_2">GenAI Text-to-SQL</a>: perguntas em português viram SQL sobre a camada ouro do CineData, com guardrails e busca semântica. Python.<br>
+<a href="https://ressonancia-one.vercel.app">Ressonância</a>: enciclopédia interativa de áudio, psicoacústica e fones IEM, com laboratórios em Web Audio. TypeScript.<br>
+<a href="https://overwatch-data-meta.vercel.app">Overwatch DataMeta</a>: grafo dos heróis de Overwatch 2, com counters e sinergias. D3.js.<br>
+<a href="https://github.com/LucassTml/CineLab_RocketLab2026.2">CineLab</a>: catálogo de filmes full-stack, com busca, paginação e avaliações. React, FastAPI e SQLite.<br>
+<a href="https://github.com/LucassTml/CineData-Analytics-DataBricks">CineData Analytics</a>: arquitetura medalhão (bronze, prata e ouro) no Databricks.<br>
+<a href="https://github.com/LucassTml/Projeto-TowerDefense">Tower Defense</a>: jogo completo em Java com Swing.<br>
+<a href="https://lucasstml.github.io/PortfolioXP/">PortfolioXP</a>: meu portfólio em forma de Windows XP, com terminal, jogos e algoritmos.
+</p>
 
-<table width="100%" border="0" cellpadding="3" cellspacing="0" bgcolor="#000000">
-<tr><td>
-<font face="Courier New,Courier" size="2" color="#00FF00"><marquee scrollamount="4">*** Bem-vindo &agrave; minha home page! *** Este curr&iacute;culo foi escrito &agrave; m&atilde;o em HTML 3.2 *** Sem CSS, sem JavaScript, sem frameworks *** &Uacute;ltima atualiza&ccedil;&atilde;o: 25/11/2026 ***</marquee></font>
-</td></tr>
+<h2 id="conhecimentos">Conhecimentos</h2>
+<table>
+  <tr><td><b>Linguagens</b></td><td>C (estruturas de dados e algoritmos) e Python todo dia; também JavaScript, TypeScript, Java, Rust, HTML/CSS e Bash</td></tr>
+  <tr><td><b>IA</b></td><td>LLMs locais, agentes, skills, servidores MCP, llama.cpp, whisper.cpp, RAG, Text-to-SQL, OpenRouter</td></tr>
+  <tr><td><b>Web e dados</b></td><td>Node.js, React, Spring Boot, APIs REST, Streamlit, D3.js, Web Audio, Pandas, Databricks, NetworkX</td></tr>
+  <tr><td><b>Ferramentas</b></td><td>Linux/Unix, Docker, Git, GitHub Actions, n8n, PyAutoGUI</td></tr>
+  <tr><td><b>Idiomas</b></td><td>Português (nativo) e inglês (avançado)</td></tr>
+  <tr><td><b>Pessoal</b></td><td>Trabalho em equipe, liderança, pensamento crítico, resolução de problemas</td></tr>
 </table>
 
-<br>
-<center>
-<pre>
- _                                       __  __          _
-| |      _   _    ___    __ _   ___     |  \/  |   ___  | |   ___
-| |     | | | |  / __|  / _` | / __|    | |\/| |  / _ \ | |  / _ \
-| |___  | |_| | | (__  | (_| | \__ \    | |  | | |  __/ | | | (_) |
-|_____|  \__,_|  \___|  \__,_| |___/    |_|  |_|  \___| |_|  \___/
-</pre>
-<font face="Times New Roman,Times" size="4"><i>Estudante de Engenharia da Computa&ccedil;&atilde;o</i></font>
-</center>
-<br>
-
-<!-- Ficha -->
-<table width="100%" border="1" cellpadding="8" cellspacing="0">
-<tr>
-  <td width="120" align="center" valign="middle" bgcolor="#E0E0E0">
-    <img src="https://avatars.githubusercontent.com/u/61882848?v=4&amp;s=200" width="100" height="100" border="1" alt="[Foto: Lucas Melo]">
-  </td>
-  <td valign="top">
-    <table border="0" cellpadding="2" cellspacing="0">
-    <tr><td><font face="Arial,Helvetica" size="2"><b>Nome:</b></font></td><td><font face="Times New Roman,Times" size="3">Lucas Eduardo Melo Tenorio</font></td></tr>
-    <tr><td><font face="Arial,Helvetica" size="2"><b>Curso:</b></font></td><td><font face="Times New Roman,Times" size="3">Engenharia da Computa&ccedil;&atilde;o - UPE (Poli), 2024 a 2029</font></td></tr>
-    <tr><td><font face="Arial,Helvetica" size="2"><b>Cidade:</b></font></td><td><font face="Times New Roman,Times" size="3">Recife, Pernambuco - Brasil</font></td></tr>
-    <tr><td><font face="Arial,Helvetica" size="2"><b>E-mail:</b></font></td><td><font face="Times New Roman,Times" size="3"><a href="mailto:lemt99@gmail.com">lemt99@gmail.com</a></font></td></tr>
-    <tr><td><font face="Arial,Helvetica" size="2"><b>Telefone:</b></font></td><td><font face="Times New Roman,Times" size="3">(81) 99161-5061</font></td></tr>
-    <tr><td><font face="Arial,Helvetica" size="2"><b>Na rede:</b></font></td><td><font face="Times New Roman,Times" size="3"><a href="https://github.com/LucassTml">GitHub</a> | <a href="https://www.linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311/">LinkedIn</a> | <a href="../">Portf&oacute;lio</a></font></td></tr>
-    </table>
-  </td>
-</tr>
-</table>
-
-<br>
-
-<!-- Indice -->
-<table width="100%" border="0" cellpadding="6" cellspacing="0" bgcolor="#FFFFCC">
-<tr><td>
-<font face="Arial,Helvetica" size="2"><b>&Iacute;NDICE:</b>
-[ <a href="#resumo">Resumo</a>
-| <a href="#formacao">Forma&ccedil;&atilde;o</a>
-| <a href="#experiencia">Experi&ecirc;ncia</a>
-| <a href="#projetos">Projetos</a>
-| <a href="#conhecimentos">Conhecimentos</a>
-| <a href="#idiomas">Idiomas</a>
-| <a href="#contato">Contato</a> ]</font>
-</td></tr>
-</table>
-
-<!-- 1. RESUMO -->
-<br>
-<h2><a name="resumo"><font face="Arial,Helvetica" color="#000080">1. Resumo</font></a></h2>
-<hr size="2" noshade>
-<p><font face="Times New Roman,Times" size="3">
-Estudante de Engenharia da Computa&ccedil;&atilde;o na Universidade de Pernambuco (Escola Polit&eacute;cnica), em Recife.
-Programo principalmente em <b>C</b> e <b>Python</b>, quase sempre em ambiente Unix, e tenho pr&aacute;tica em desenvolvimento
-web, tanto front quanto back-end, al&eacute;m de conteineriza&ccedil;&atilde;o com Docker e automa&ccedil;&atilde;o com n8n e APIs REST.
-</font></p>
-<p><font face="Times New Roman,Times" size="3">
-Hoje meu foco &eacute; IA rodando localmente: LLMs na pr&oacute;pria m&aacute;quina, agentes, skills, servidores MCP e uso de ferramentas.
-O que eu mais gosto &eacute; da <i>engenharia do processo</i>: entender como cada etapa funciona, seja polindo um app pequeno
-ou montando um sistema maior.
-</font></p>
-<p align="right"><font face="Arial,Helvetica" size="1">[ <a href="#topo">voltar ao topo</a> ]</font></p>
-
-<!-- 2. FORMACAO -->
-<h2><a name="formacao"><font face="Arial,Helvetica" color="#000080">2. Forma&ccedil;&atilde;o</font></a></h2>
-<hr size="2" noshade>
-<table width="100%" border="1" cellpadding="6" cellspacing="0">
-<tr bgcolor="#C0C0C0">
-  <th align="left"><font face="Arial,Helvetica" size="2">Per&iacute;odo</font></th>
-  <th align="left"><font face="Arial,Helvetica" size="2">Curso</font></th>
-  <th align="left"><font face="Arial,Helvetica" size="2">Institui&ccedil;&atilde;o</font></th>
-  <th align="left"><font face="Arial,Helvetica" size="2">Situa&ccedil;&atilde;o</font></th>
-</tr>
-<tr>
-  <td nowrap><font face="Courier New,Courier" size="2">2024 - 2029</font></td>
-  <td><font face="Times New Roman,Times" size="3"><b>Engenharia da Computa&ccedil;&atilde;o</b></font></td>
-  <td><font face="Times New Roman,Times" size="3">Universidade de Pernambuco (UPE), Escola Polit&eacute;cnica</font></td>
-  <td><font face="Times New Roman,Times" size="3"><font color="#008000"><b>Cursando</b></font></font></td>
-</tr>
-<tr bgcolor="#F0F0F0">
-  <td nowrap><font face="Courier New,Courier" size="2">2020 - 2023</font></td>
-  <td><font face="Times New Roman,Times" size="3"><b>Ensino M&eacute;dio</b></font></td>
-  <td><font face="Times New Roman,Times" size="3">Col&eacute;gio Cognitivo</font></td>
-  <td><font face="Times New Roman,Times" size="3">Conclu&iacute;do</font></td>
-</tr>
-<tr>
-  <td nowrap><font face="Courier New,Courier" size="2">2022</font></td>
-  <td><font face="Times New Roman,Times" size="3"><b>Curso de Ingl&ecirc;s</b></font></td>
-  <td><font face="Times New Roman,Times" size="3">Britanic</font></td>
-  <td><font face="Times New Roman,Times" size="3">Conclu&iacute;do, com certificado</font></td>
-</tr>
-</table>
-<p align="right"><font face="Arial,Helvetica" size="1">[ <a href="#topo">voltar ao topo</a> ]</font></p>
-
-<!-- 3. EXPERIENCIA -->
-<h2><a name="experiencia"><font face="Arial,Helvetica" color="#000080">3. Experi&ecirc;ncia e Programas</font></a></h2>
-<hr size="2" noshade>
-
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-  <td><font face="Times New Roman,Times" size="4"><b>RocketLab 2026.2</b></font> <font face="Times New Roman,Times" size="3">- Visagio</font></td>
-  <td align="right" valign="bottom"><font face="Courier New,Courier" size="2">2026</font></td>
-</tr>
-</table>
-<font face="Times New Roman,Times" size="3">
-<p>Programa da Visagio com trilhas de dados e desenvolvimento. Nele desenvolvi:</p>
-<ul type="square">
-  <li><b>CineData Analytics</b> - arquitetura medalh&atilde;o (bronze, prata e ouro) no Databricks;</li>
-  <li><b>GenAI Text-to-SQL</b> - agente que transforma perguntas em portugu&ecirc;s em consultas SQL sobre a camada ouro, com guardrails, busca sem&acirc;ntica e interface em Streamlit;</li>
-  <li><b>CineLab</b> - site full-stack (React com TypeScript, FastAPI e SQLite) para gerenciar um cat&aacute;logo de filmes, com busca, pagina&ccedil;&atilde;o e avalia&ccedil;&otilde;es.</li>
-</ul>
-</font>
-
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-  <td><font face="Times New Roman,Times" size="4"><b>Equipe Astro</b></font> <font face="Times New Roman,Times" size="3">- Teoria dos Grafos, UPE</font></td>
-  <td align="right" valign="bottom"><font face="Courier New,Courier" size="2">Gradua&ccedil;&atilde;o</font></td>
-</tr>
-</table>
-<font face="Times New Roman,Times" size="3">
-<ul type="square">
-  <li>Modelagem do problema da grade hor&aacute;ria da universidade, em diagrama e em texto, sempre ligada ao c&oacute;digo e &agrave;s estrat&eacute;gias de implementa&ccedil;&atilde;o do time.</li>
-</ul>
-</font>
-<p align="right"><font face="Arial,Helvetica" size="1">[ <a href="#topo">voltar ao topo</a> ]</font></p>
-
-<!-- 4. PROJETOS -->
-<h2><a name="projetos"><font face="Arial,Helvetica" color="#000080">4. Projetos Selecionados</font></a></h2>
-<hr size="2" noshade>
-<font face="Times New Roman,Times" size="3">
-<dl>
-  <dt><b><a href="https://github.com/LucassTml/audian">Audian</a></b> <font face="Courier New,Courier" size="2">[Rust]</font></dt>
-  <dd>Ditado por voz para Windows, open-source. Reconhecimento de fala (Whisper ou Parakeet) e um LLM pequeno (Qwen) rodam no pr&oacute;prio computador, sem internet, e transformam a fala em texto bem escrito em qualquer programa.<br><br></dd>
-
-  <dt><b><a href="https://github.com/LucassTml/OpenlyAntigravity">OpenlyAntigravity</a></b> <font face="Courier New,Courier" size="2">[JavaScript]</font></dt>
-  <dd>Plugin para o OpenCode que usa o Antigravity (agy) do pr&oacute;prio terminal como agente, sem chave de API paga e sem OAuth.<br><br></dd>
-
-  <dt><b><a href="https://github.com/LucassTml/GenAI-WebInterface-RocketLab-2026_2">GenAI Text-to-SQL</a></b> <font face="Courier New,Courier" size="2">[Python, LLMs]</font></dt>
-  <dd>Agente Text-to-SQL sobre a camada ouro do CineData, com guardrails, busca sem&acirc;ntica e troca de modelo pelo OpenRouter.<br><br></dd>
-
-  <dt><b><a href="https://ressonancia-one.vercel.app">Resson&acirc;ncia</a></b> <font face="Courier New,Courier" size="2">[TypeScript, MDX, Web Audio]</font></dt>
-  <dd>Enciclop&eacute;dia interativa de &aacute;udio, psicoac&uacute;stica e fones IEM (PT/EN), com dezenas de laborat&oacute;rios em Web Audio que processam o som no navegador.<br><br></dd>
-
-  <dt><b><a href="https://overwatch-data-meta.vercel.app">Overwatch DataMeta</a></b> <font face="Courier New,Courier" size="2">[D3.js, NetworkX]</font></dt>
-  <dd>Grafo interativo dos her&oacute;is de Overwatch 2, com fun&ccedil;&otilde;es, habilidades, counters e sinergias.<br><br></dd>
-
-  <dt><b><a href="https://github.com/LucassTml/CineLab_RocketLab2026.2">CineLab</a></b> <font face="Courier New,Courier" size="2">[React, FastAPI, SQLite]</font></dt>
-  <dd>Site full-stack para gerenciar um cat&aacute;logo de filmes, com cadastro, edi&ccedil;&atilde;o e avalia&ccedil;&otilde;es.<br><br></dd>
-
-  <dt><b><a href="https://github.com/LucassTml/CineData-Analytics-DataBricks">CineData Analytics</a></b> <font face="Courier New,Courier" size="2">[Databricks, Python]</font></dt>
-  <dd>Arquitetura medalh&atilde;o no Databricks, feita no RocketLab 2026.2.<br><br></dd>
-
-  <dt><b><a href="https://lucasstml.github.io/PortfolioXP/">PortfolioXP</a></b> <font face="Courier New,Courier" size="2">[HTML, CSS, JavaScript]</font></dt>
-  <dd>Portf&oacute;lio interativo no estilo do Windows XP, com janelas, menu Iniciar, terminal, jogos e visualizadores de algoritmos.<br><br></dd>
-
-  <dt><b><a href="https://github.com/LucassTml/Projeto-TowerDefense">Tower Defense</a></b> <font face="Courier New,Courier" size="2">[Java, Swing]</font></dt>
-  <dd>Jogo de tower defense completo, feito em Java com a biblioteca Swing.</dd>
-</dl>
-</font>
-<p align="right"><font face="Arial,Helvetica" size="1">[ <a href="#topo">voltar ao topo</a> ]</font></p>
-
-<!-- 5. CONHECIMENTOS -->
-<h2><a name="conhecimentos"><font face="Arial,Helvetica" color="#000080">5. Conhecimentos T&eacute;cnicos</font></a></h2>
-<hr size="2" noshade>
-<table width="100%" border="1" cellpadding="6" cellspacing="0">
-<tr>
-  <td width="150" valign="top" bgcolor="#E0E0E0"><font face="Arial,Helvetica" size="2"><b>Linguagens</b></font></td>
-  <td><font face="Times New Roman,Times" size="3"><b>C</b> (estruturas de dados e algoritmos) e <b>Python</b> no dia a dia; tamb&eacute;m JavaScript, TypeScript, Java, Rust, HTML/CSS e Bash.</font></td>
-</tr>
-<tr>
-  <td valign="top" bgcolor="#E0E0E0"><font face="Arial,Helvetica" size="2"><b>Intelig&ecirc;ncia Artificial</b></font></td>
-  <td><font face="Times New Roman,Times" size="3">LLMs locais, agentes de IA, skills de agentes, servidores MCP, llama.cpp, whisper.cpp, RAG, Text-to-SQL, OpenRouter.</font></td>
-</tr>
-<tr>
-  <td valign="top" bgcolor="#E0E0E0"><font face="Arial,Helvetica" size="2"><b>Web</b></font></td>
-  <td><font face="Times New Roman,Times" size="3">Node.js, React, Spring Boot, APIs REST, Streamlit, D3.js, Web Audio API.</font></td>
-</tr>
-<tr>
-  <td valign="top" bgcolor="#E0E0E0"><font face="Arial,Helvetica" size="2"><b>Dados</b></font></td>
-  <td><font face="Times New Roman,Times" size="3">Pandas, Databricks, NetworkX, Excel.</font></td>
-</tr>
-<tr>
-  <td valign="top" bgcolor="#E0E0E0"><font face="Arial,Helvetica" size="2"><b>Sistemas e ferramentas</b></font></td>
-  <td><font face="Times New Roman,Times" size="3">Linux/Unix, Docker, Git, GitHub Actions, n8n, PyAutoGUI.</font></td>
-</tr>
-</table>
-<p align="right"><font face="Arial,Helvetica" size="1">[ <a href="#topo">voltar ao topo</a> ]</font></p>
-
-<!-- 6. IDIOMAS E COMPETENCIAS -->
-<h2><a name="idiomas"><font face="Arial,Helvetica" color="#000080">6. Idiomas e Compet&ecirc;ncias</font></a></h2>
-<hr size="2" noshade>
-<table width="100%" border="0" cellpadding="4" cellspacing="0">
-<tr>
-  <td width="50%" valign="top">
-    <font face="Arial,Helvetica" size="2"><b>Idiomas</b></font>
-    <font face="Times New Roman,Times" size="3">
-    <ul>
-      <li>Portugu&ecirc;s - nativo</li>
-      <li>Ingl&ecirc;s - avan&ccedil;ado</li>
-    </ul>
-    </font>
-  </td>
-  <td width="50%" valign="top">
-    <font face="Arial,Helvetica" size="2"><b>Compet&ecirc;ncias interpessoais</b></font>
-    <font face="Times New Roman,Times" size="3">
-    <ul>
-      <li>Trabalho em equipe</li>
-      <li>Lideran&ccedil;a</li>
-      <li>Pensamento cr&iacute;tico</li>
-      <li>Resolu&ccedil;&atilde;o de problemas</li>
-    </ul>
-    </font>
-  </td>
-</tr>
-</table>
-<p align="right"><font face="Arial,Helvetica" size="1">[ <a href="#topo">voltar ao topo</a> ]</font></p>
-
-<!-- 7. CONTATO -->
-<h2><a name="contato"><font face="Arial,Helvetica" color="#000080">7. Contato</font></a></h2>
-<hr size="2" noshade>
-<address>
-<font face="Times New Roman,Times" size="3">
-Lucas Eduardo Melo Tenorio<br>
-Recife, PE - Brasil<br>
-E-mail: <a href="mailto:lemt99@gmail.com">lemt99@gmail.com</a><br>
+<h2 id="contato">Contato</h2>
+<p>
+<a href="mailto:lemt99@gmail.com">lemt99@gmail.com</a><br>
 Telefone: (81) 99161-5061<br>
-GitHub: <a href="https://github.com/LucassTml">github.com/LucassTml</a><br>
-LinkedIn: <a href="https://www.linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311/">linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311</a>
-</font>
-</address>
-<p><font face="Times New Roman,Times" size="3">
-<img src="../assets/img/favicon.svg" width="16" height="16" alt="*" align="absmiddle">
-<b>Livro de visitas:</b> <a href="mailto:lemt99@gmail.com?subject=Assinei%20seu%20livro%20de%20visitas">assine por e-mail</a>.
-</font></p>
+Recife, Pernambuco, Brasil<br>
+<a href="https://github.com/LucassTml">github.com/LucassTml</a><br>
+<a href="https://www.linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311/">linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311</a>
+</p>
 
-<br>
-<hr size="1" noshade>
+<hr>
+<tt>
+outras versões: <a href="../">site moderno</a>, <a href="https://lucasstml.github.io/PortfolioXP/">PortfolioXP</a><br>
+última atualização: 25 de novembro de 2026. sem javascript.
+</tt>
 
-<!-- Rodape -->
-<center>
-<table border="0" cellpadding="0" cellspacing="6">
-<tr>
-  <td><table border="1" cellpadding="4" cellspacing="0" bgcolor="#000000"><tr><td align="center"><font face="Arial,Helvetica" size="1" color="#FFFFFF"><b>FEITO EM<br>HTML 3.2</b></font></td></tr></table></td>
-  <td><table border="1" cellpadding="4" cellspacing="0" bgcolor="#000080"><tr><td align="center"><font face="Arial,Helvetica" size="1" color="#FFFF00"><b>0 BYTES<br>DE CSS</b></font></td></tr></table></td>
-  <td><table border="1" cellpadding="4" cellspacing="0" bgcolor="#800000"><tr><td align="center"><font face="Arial,Helvetica" size="1" color="#FFFFFF"><b>0 BYTES DE<br>JAVASCRIPT</b></font></td></tr></table></td>
-  <td><table border="1" cellpadding="4" cellspacing="0" bgcolor="#008080"><tr><td align="center"><font face="Arial,Helvetica" size="1" color="#FFFFFF"><b>MELHOR EM<br>800 x 600</b></font></td></tr></table></td>
-</tr>
-</table>
-
-<font face="Arial,Helvetica" size="1">
-Contador de visitas: <tt>[ desligado desde 1999 ]</tt><br>
-&Uacute;ltima atualiza&ccedil;&atilde;o: 25 de novembro de 2026<br><br>
-[ <a href="../">Voltar para o site moderno</a>
-| <a href="https://lucasstml.github.io/PortfolioXP/">Vers&atilde;o Windows XP</a>
-| <a href="#topo">Topo</a> ]<br><br>
-&copy; 1996-2026 Lucas Melo. Para imprimir, use Arquivo &gt; Imprimir.
-</font>
-</center>
-
-</td></tr>
-</table>
-
-</td></tr>
-</table>
-
-</center>
 </body>
 </html>
