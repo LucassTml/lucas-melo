@@ -7,27 +7,46 @@
 <meta name="description" content="Currículo de Lucas Melo, estudante de Engenharia da Computação na UPE, em Recife.">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <style>
-  html { background: #fdf3d8; }
+  /* Fundo: branco é o padrão. O seletor é feito só com rádios e :has(), sem JavaScript. */
+  :root { --bg: #fff; --fg: #000; --line: #000; --link: #0000ee; --visited: #551a8b; }
+  :root:has(#fundo-preto:checked) { --bg: #000; --fg: #e8e8e8; --line: #e8e8e8; --link: #8ab4f8; --visited: #c58af9; color-scheme: dark; }
+  :root:has(#fundo-amarelo:checked) { --bg: #fdf3d8; --link: #044c9f; --visited: #6b3fa0; }
+  html { background: var(--bg); color: var(--fg); }
   body { max-width: 680px; margin: 0 auto; padding: 12px 16px 32px; overflow-wrap: anywhere; }
+  .topo { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; }
+  .fundo { font-family: monospace; }
+  .fundo label { display: inline-block; padding: 1px 6px; border: 1px solid var(--line); cursor: pointer; }
+  .fundo label:has(:checked) { background: var(--fg); color: var(--bg); }
+  .fundo label:has(:focus-visible) { outline: 2px solid var(--link); outline-offset: 2px; }
+  .fundo input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
   header { text-align: center; }
   h1 { margin: 6px 0 0; }
   header p { margin: .25em 0; }
-  nav { padding: 14px 0; border-bottom: 1.5px solid #000; }
+  .foto { border: 1px solid var(--line); }
+  nav { padding: 14px 0; border-bottom: 1.5px solid var(--line); }
   table { width: 100%; }
-  table, th, td { border: 1px solid #000; border-collapse: collapse; padding: 4px 6px; vertical-align: top; overflow-wrap: normal; }
+  table, th, td { border: 1px solid var(--line); border-collapse: collapse; padding: 4px 6px; vertical-align: top; overflow-wrap: normal; }
   th { text-align: left; }
-  hr { border: 0; border-top: 1.5px solid #000; }
-  a { color: #044c9f; }
+  hr { border: 0; border-top: 1.5px solid var(--line); }
+  a { color: var(--link); }
+  a:visited { color: var(--visited); }
   @media (max-width: 420px) { body { padding: 10px 10px 28px; } th, td { padding: 3px 4px; } }
 </style>
 </head>
 
 <body>
 
-<tt>a casa do lucas na internet. o design é assim de propósito.</tt>
+<div class="topo">
+  <tt>a casa do lucas na internet. o design é assim de propósito.</tt>
+  <span class="fundo" role="radiogroup" aria-label="Cor do fundo">fundo:
+    <label><input type="radio" name="fundo" id="fundo-branco" checked>branco</label>
+    <label><input type="radio" name="fundo" id="fundo-preto">preto</label>
+    <label><input type="radio" name="fundo" id="fundo-amarelo">amarelo</label>
+  </span>
+</div>
 
 <header>
-  <p><img src="https://avatars.githubusercontent.com/u/61882848?v=4&amp;s=200" width="96" height="96" alt="Foto de Lucas Melo" style="border:1px solid #000"></p>
+  <p><img class="foto" src="https://avatars.githubusercontent.com/u/61882848?v=4&amp;s=200" width="96" height="96" alt="Foto de Lucas Melo"></p>
   <h1>Lucas Melo</h1>
   <p>Estudante de Engenharia da Computação</p>
   <p>Universidade de Pernambuco (UPE), Escola Politécnica, 2024 a 2029</p>

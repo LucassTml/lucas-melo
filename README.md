@@ -23,7 +23,7 @@ Tudo é **HTML, CSS e JavaScript puros**, sem biblioteca, framework ou etapa de 
 | Endereço | O que é |
 |---|---|
 | [`/`](https://lucasstml.github.io/lucas-melo/) | O portfólio principal, moderno e em preto |
-| [`/curriculo/`](https://lucasstml.github.io/lucas-melo/curriculo/) | Meu currículo numa página pessoal à moda antiga: fonte padrão do navegador, tabela com borda, uns poucos ajustes de CSS e nenhuma linha de JavaScript |
+| [`/curriculo/`](https://lucasstml.github.io/lucas-melo/curriculo/) | Meu currículo numa página pessoal à moda antiga: fonte padrão do navegador, tabela com borda, fundo branco, preto ou amarelo (escolhido só com CSS) e nenhuma linha de JavaScript |
 
 ## Detalhes que dá para encontrar
 
