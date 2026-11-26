@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lucas Melo — Engenharia da Computação</title>
+<meta name="description" content="Portfólio do Lucas Melo, estudante de Engenharia da Computação na UPE (Recife). Projetos com IA local, agentes, web e dados, trajetória e contato.">
+<meta name="author" content="Lucas Melo">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://lucasstml.github.io/lucas-melo/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Lucas Melo — Engenharia da Computação">
+<meta property="og:description" content="Projetos com IA local, agentes, web e dados. Estudante de Engenharia da Computação na UPE, em Recife.">
+<meta property="og:url" content="https://lucasstml.github.io/lucas-melo/">
+<script>
+/* Marca que há JavaScript e decide, antes da primeira pintura, se a abertura roda.
+   Se o main.js não carregar, a classe sai e o conteúdo aparece sem animação. */
+(function(){
+  var d=document.documentElement; d.classList.add('js');
+  try{ if(sessionStorage.getItem('lm:intro')||matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('no-intro'); }catch(e){}
+  setTimeout(function(){ if(!window.__lm) d.classList.remove('js'); }, 3000);
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+<script src="assets/js/main.js?v=1.0.0" defer></script>
+<script src="assets/js/lab.js?v=1.0.0" defer></script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Lucas Melo",
+  "alternateName":"Lucas Eduardo Melo Tenorio",
+  "url":"https://lucasstml.github.io/lucas-melo/",
+  "jobTitle":"Estudante de Engenharia da Computação",
+  "alumniOf":{"@type":"CollegeOrUniversity","name":"Universidade de Pernambuco (UPE), Escola Politécnica"},
+  "address":{"@type":"PostalAddress","addressLocality":"Recife","addressRegion":"PE","addressCountry":"BR"},
+  "knowsAbout":["C","Python","Rust","JavaScript","LLMs locais","Agentes de IA","MCP","Docker"],
+  "sameAs":["https://github.com/LucassTml","https://www.linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311/"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Abertura -->
+<div class="intro" aria-hidden="true">
+  <div class="intro-inner">
+    <p class="intro-name"><span style="--i:0">L</span><span style="--i:1">u</span><span style="--i:2">c</span><span style="--i:3">a</span><span style="--i:4">s</span><span class="sp"></span><em><span style="--i:5">M</span><span style="--i:6">e</span><span style="--i:7">l</span><span style="--i:8">o</span></em></p>
+    <div class="intro-bar"><span></span></div>
+    <div class="intro-meta"><span>Portfólio — 2026</span><span class="intro-count">000</span></div>
+  </div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor" aria-hidden="true">
+  <div class="cursor-ring"><span class="cursor-label"></span></div>
+  <div class="cursor-dot"></div>
+</div>
+
+<div class="progress" aria-hidden="true"></div>
+
+<!-- Navegação -->
+<header class="nav" data-nav>
+  <a class="brand" href="#topo" aria-label="Lucas Melo, voltar ao topo"><span class="brand-mark">LM</span><span class="brand-name">Lucas Melo</span></a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="#sobre" data-roll>Sobre</a>
+    <a href="#projetos" data-roll>Projetos</a>
+    <a href="#habilidades" data-roll>Habilidades</a>
+    <a href="#trajetoria" data-roll>Trajetória</a>
+    <a href="#lab" data-roll>Lab</a>
+    <a href="#contato" data-roll>Contato</a>
+  </nav>
+  <div class="nav-right">
+    <a class="nav-cv" href="curriculo/" data-roll data-cursor="1996">CV ’96</a>
+    <button class="kbd" type="button" data-palette-open aria-label="Abrir a paleta de comandos (Ctrl + K)"><span data-mod>Ctrl</span> K</button>
+    <span class="clock" title="Hora local em Recife"><span class="clock-dot"></span>REC <time data-clock>--:--</time></span>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn><span>Menu</span><i></i></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav aria-label="Menu">
+    <a href="#sobre" style="--i:0"><small>01</small>Sobre</a>
+    <a href="#projetos" style="--i:1"><small>02</small>Projetos</a>
+    <a href="#habilidades" style="--i:2"><small>03</small>Habilidades</a>
+    <a href="#trajetoria" style="--i:3"><small>04</small>Trajetória</a>
+    <a href="#lab" style="--i:4"><small>05</small>Laboratório</a>
+    <a href="#contato" style="--i:5"><small>06</small>Contato</a>
+  </nav>
+  <div class="menu-foot">
+    <a href="curriculo/">Currículo, edição 1996 →</a>
+    <a href="https://lucasstml.github.io/PortfolioXP/" target="_blank" rel="noopener">PortfolioXP ↗</a>
+  </div>
+</div>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="topo" aria-label="Apresentação">
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner wrap">
+      <div class="hero-top">
+        <p class="mono hero-in" style="--d:0">Portfólio — Edição 2026</p>
+        <p class="mono hero-in" style="--d:1">Recife, PE — 8°03′S 34°54′O</p>
+      </div>
+      <div class="hero-title-wrap">
+        <h1 class="hero-title" aria-label="Lucas Melo">
+          <span class="line"><span class="chars" data-chars aria-hidden="true">Lucas</span></span>
+          <span class="line"><em class="chars" data-chars aria-hidden="true">Melo</em></span>
+        </h1>
+        <p class="hero-role hero-in" style="--d:6">Engenharia da<br>Computação — UPE</p>
+      </div>
+      <div class="hero-bottom">
+        <p class="hero-lead hero-in" style="--d:4">Programo principalmente em C e Python e, hoje, passo boa parte do tempo com <em>IA local</em>: LLMs na minha máquina, agentes, skills e servidores MCP.</p>
+        <ul class="hero-facts hero-in" style="--d:5">
+          <li><span>Base</span>Recife, PE</li>
+          <li><span>Formação</span>UPE Poli, 2024–2029</li>
+          <li><span>Agora</span>Ferramentas para agentes</li>
+        </ul>
+        <div class="hero-cta hero-in" style="--d:6">
+          <a class="btn btn-solid" href="#projetos" data-magnetic><span>Ver projetos</span></a>
+          <a class="btn" href="curriculo/" data-magnetic data-cursor="1996"><span>Currículo ’96</span></a>
+        </div>
+      </div>
+      <a class="scroll-cue hero-in" style="--d:7" href="#sobre" aria-label="Rolar até Sobre"><span class="mono">Role</span><span class="scroll-line"></span></a>
+    </div>
+    <p class="hero-hint mono" aria-hidden="true">clique no fundo</p>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="wrap grid">
+      <p class="label" data-reveal><span>01</span><b data-scramble>Sobre</b></p>
+      <div class="col-main">
+        <h2 class="statement" data-split>O que eu mais gosto é da <em>engenharia do processo</em>: entender como cada etapa funciona, do app pequeno ao sistema complexo.</h2>
+        <div class="about-cols">
+          <p data-reveal>Estudo Engenharia da Computação na Universidade de Pernambuco (Escola Politécnica), em Recife. Entrei em 2024 e a previsão de formatura é 2029. No dia a dia programo mais em C e Python, quase sempre em ambiente Unix.</p>
+          <p data-reveal style="--rd:1">Já fiz bastante coisa de web, tanto front quanto back-end, e uso Docker e n8n para conteinerizar e automatizar o que dá. Ultimamente ando envolvido com IA rodando localmente: LLMs na minha própria máquina, agentes, skills, servidores MCP e uso de ferramentas.</p>
+        </div>
+        <dl class="facts">
+          <div data-reveal><dt>Construindo</dt><dd>Ferramentas para agentes de código e modelos locais</dd></div>
+          <div data-reveal style="--rd:1"><dt>Estudando</dt><dd>Inferência local (llama.cpp, whisper.cpp), skills de agentes, MCP e RAG</dd></div>
+          <div data-reveal style="--rd:2"><dt>Idiomas</dt><dd>Português (nativo) e inglês (avançado)</dd></div>
+        </dl>
+        <div class="stats">
+          <div class="stat" data-reveal><b data-count="14" data-gh-count>14</b><span>repositórios públicos no GitHub <i class="live" title="Atualizado pela API do GitHub">ao vivo</i></span></div>
+          <div class="stat" data-reveal style="--rd:1"><b data-count="10">10</b><span>projetos selecionados nesta página</span></div>
+          <div class="stat" data-reveal style="--rd:2"><b data-count="2029" data-from="2024">2029</b><span>formatura prevista na UPE</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="wrap grid">
+      <p class="label" data-reveal><span>02</span><b data-scramble>Projetos</b></p>
+      <div class="col-main">
+        <div class="section-head">
+          <h2 class="title" data-split>Trabalhos <em>selecionados</em></h2>
+          <p class="section-sub" data-reveal>Do ditado por voz que roda sem internet ao agente que transforma perguntas em SQL. Clique em um projeto para ver a descrição e os links.</p>
+        </div>
+        <div class="filters" role="toolbar" aria-label="Filtrar projetos" data-reveal>
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">Todos <sup>10</sup></button>
+          <button class="filter" type="button" data-filter="ia" aria-pressed="false">IA e agentes <sup>3</sup></button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web <sup>4</sup></button>
+          <button class="filter" type="button" data-filter="dados" aria-pressed="false">Dados <sup>1</sup></button>
+          <button class="filter" type="button" data-filter="jogos" aria-pressed="false">Jogos e algoritmos <sup>2</sup></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ol class="projects" data-projects>
+        <li class="project" data-cat="ia" data-preview="audian" id="projeto-audian">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-audian" data-cursor="abrir">
+              <span class="p-num">01</span><span class="p-name">Audian</span><span class="p-cat">IA e agentes</span><span class="p-stack">Rust · Whisper · Qwen</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-audian">
+              <div class="pd-inner">
+                <p>Ditado por voz para Windows, open-source e inspirado no Wispr Flow. O reconhecimento de fala (Whisper ou Parakeet) e um LLM pequeno (Qwen) rodam no próprio computador, sem internet, e transformam o que você fala em texto bem escrito em qualquer programa.</p>
+                <div class="pd-links"><a href="https://github.com/LucassTml/audian" target="_blank" rel="noopener">Código <i>↗</i></a><a href="https://github.com/LucassTml/audian/releases/latest" target="_blank" rel="noopener">Baixar <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="ia" data-preview="antigravity" id="projeto-openlyantigravity">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-antigravity" data-cursor="abrir">
+              <span class="p-num">02</span><span class="p-name">OpenlyAntigravity</span><span class="p-cat">IA e agentes</span><span class="p-stack">JavaScript · OpenCode</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-antigravity">
+              <div class="pd-inner">
+                <p>Plugin para o OpenCode que usa o seu próprio Antigravity (agy) no terminal como agente. Assim dá para aproveitar o plano do Google que você já paga, sem chave de API paga e sem OAuth.</p>
+                <div class="pd-links"><a href="https://github.com/LucassTml/OpenlyAntigravity" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="ia" data-preview="texttosql" id="projeto-text-to-sql">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-texttosql" data-cursor="abrir">
+              <span class="p-num">03</span><span class="p-name">GenAI Text-to-SQL</span><span class="p-cat">IA e agentes</span><span class="p-stack">Python · LLMs · Streamlit</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-texttosql">
+              <div class="pd-inner">
+                <p>Agente que transforma perguntas em português em consultas SQL sobre a camada Gold do CineData, no Databricks. Tem guardrails, busca semântica, troca de modelo pelo OpenRouter e interface em Streamlit.</p>
+                <div class="pd-links"><a href="https://github.com/LucassTml/GenAI-WebInterface-RocketLab-2026_2" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="web" data-preview="ressonancia" id="projeto-ressonancia">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-ressonancia" data-cursor="abrir">
+              <span class="p-num">04</span><span class="p-name">Ressonância</span><span class="p-cat">Web</span><span class="p-stack">TypeScript · MDX · Web Audio</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-ressonancia">
+              <div class="pd-inner">
+                <p>Enciclopédia interativa de áudio, psicoacústica e fones IEM, em português e inglês. Tem dezenas de laboratórios em Web Audio que processam o som direto no navegador.</p>
+                <div class="pd-links"><a href="https://ressonancia-one.vercel.app" target="_blank" rel="noopener">Abrir site <i>↗</i></a><a href="https://github.com/LucassTml/ressonancia" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="web" data-preview="overwatch" id="projeto-overwatch">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-overwatch" data-cursor="abrir">
+              <span class="p-num">05</span><span class="p-name">Overwatch DataMeta</span><span class="p-cat">Web</span><span class="p-stack">D3.js · NetworkX</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-overwatch">
+              <div class="pd-inner">
+                <p>Grafo interativo dos heróis de Overwatch 2, com funções, habilidades, counters e sinergias. O protótipo foi feito em Python com NetworkX e a versão final em D3.js.</p>
+                <div class="pd-links"><a href="https://overwatch-data-meta.vercel.app" target="_blank" rel="noopener">Abrir site <i>↗</i></a><a href="https://github.com/LucassTml/Overwatch-DataMeta" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="web" data-preview="cinelab" id="projeto-cinelab">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-cinelab" data-cursor="abrir">
+              <span class="p-num">06</span><span class="p-name">CineLab</span><span class="p-cat">Web</span><span class="p-stack">React · FastAPI · SQLite</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-cinelab">
+              <div class="pd-inner">
+                <p>Site completo, com front e back-end, para gerenciar um catálogo de filmes: cadastro, edição, busca, catálogo paginado e avaliações com nota e resenha. Foi uma atividade do RocketLab 2026.2.</p>
+                <div class="pd-links"><a href="https://github.com/LucassTml/CineLab_RocketLab2026.2" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="web" data-preview="portfolioxp" id="projeto-portfolioxp">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-portfolioxp" data-cursor="abrir">
+              <span class="p-num">07</span><span class="p-name">PortfolioXP</span><span class="p-cat">Web</span><span class="p-stack">HTML · CSS · JavaScript</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-portfolioxp">
+              <div class="pd-inner">
+                <p>A versão interativa deste portfólio: um sistema operacional no estilo do Windows XP, com janelas, menu Iniciar, terminal, dois jogos e visualizadores de algoritmos. Tudo em HTML, CSS e JavaScript puros, sem biblioteca nenhuma.</p>
+                <div class="pd-links"><a href="https://lucasstml.github.io/PortfolioXP/" target="_blank" rel="noopener">Abrir site <i>↗</i></a><a href="https://github.com/LucassTml/PortfolioXP" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="dados" data-preview="cinedata" id="projeto-cinedata">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-cinedata" data-cursor="abrir">
+              <span class="p-num">08</span><span class="p-name">CineData Analytics</span><span class="p-cat">Dados</span><span class="p-stack">Databricks · Python</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-cinedata">
+              <div class="pd-inner">
+                <p>Arquitetura medalhão (bronze, prata e ouro) no Databricks, feita no RocketLab 2026.2 da Visagio. A camada ouro é a base que o agente Text-to-SQL consulta.</p>
+                <div class="pd-links"><a href="https://github.com/LucassTml/CineData-Analytics-DataBricks" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="jogos" data-preview="tower" id="projeto-tower-defense">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-tower" data-cursor="abrir">
+              <span class="p-num">09</span><span class="p-name">Tower Defense</span><span class="p-cat">Jogos e algoritmos</span><span class="p-stack">Java · Swing</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-tower">
+              <div class="pd-inner">
+                <p>Um tower defense completo, feito em Java com a biblioteca Swing.</p>
+                <div class="pd-links"><a href="https://github.com/LucassTml/Projeto-TowerDefense" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project" data-cat="jogos" data-preview="grade" id="projeto-grade-horaria">
+          <div class="project-clip">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-grade" data-cursor="abrir">
+              <span class="p-num">10</span><span class="p-name">Grade Horária UPE</span><span class="p-cat">Jogos e algoritmos</span><span class="p-stack">Teoria dos Grafos</span><span class="p-icon" aria-hidden="true"></span>
+            </button>
+            <div class="project-detail" id="pd-grade">
+              <div class="pd-inner">
+                <p>Minha parte na Equipe Astro da disciplina de Teoria dos Grafos: modelar o problema da grade horária da UPE de um jeito que o resto do time entendesse, em diagrama e em texto, sempre ligado ao código e às estratégias de implementação.</p>
+                <div class="pd-links"><a href="https://github.com/LucassTml/Grade-Horaria-UPE-Modelagem_Problema_Grafos" target="_blank" rel="noopener">Código <i>↗</i></a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="wrap grid gh">
+      <p class="label" data-reveal><span>↳</span><b>GitHub</b></p>
+      <div class="col-main">
+        <div class="gh-head" data-reveal>
+          <h3>Atualizado recentemente <i class="live">ao vivo</i></h3>
+          <a class="link-arrow" href="https://github.com/LucassTml" target="_blank" rel="noopener">github.com/LucassTml <i>↗</i></a>
+        </div>
+        <ul class="gh-feed" data-gh-feed data-reveal>
+          <li class="gh-loading">Carregando repositórios…</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="preview" aria-hidden="true" data-preview-box>
+      <canvas></canvas>
+      <div class="preview-foot"><span data-preview-name></span><span data-preview-n></span></div>
+    </div>
+  </section>
+
+  <!-- Faixa de tecnologias -->
+  <div class="marquee" aria-hidden="true" data-marquee>
+    <div class="marquee-track">
+      <span>C</span><i>✦</i><span><em>Python</em></span><i>✦</i><span>Rust</span><i>✦</i><span><em>JavaScript</em></span><i>✦</i><span>TypeScript</span><i>✦</i><span><em>llama.cpp</em></span><i>✦</i><span>MCP</span><i>✦</i><span><em>Docker</em></span><i>✦</i><span>Java</span><i>✦</i><span><em>Linux</em></span><i>✦</i><span>n8n</span><i>✦</i><span><em>Databricks</em></span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- HABILIDADES -->
+  <section class="section" id="habilidades">
+    <div class="wrap grid">
+      <p class="label" data-reveal><span>03</span><b data-scramble>Habilidades</b></p>
+      <div class="col-main">
+        <div class="section-head">
+          <h2 class="title" data-split>Ferramentas <em>&amp;</em> linguagens</h2>
+          <p class="section-sub" data-reveal>C e Python são as do dia a dia. As outras aparecem conforme o projeto pede.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="skills">
+        <div class="skill-group" data-reveal>
+          <h3><span>A</span>Linguagens</h3>
+          <ul>
+            <li class="is-main">C <small>estruturas de dados e algoritmos</small></li>
+            <li class="is-main">Python</li>
+            <li>JavaScript</li><li>TypeScript</li><li>Java</li><li>Rust</li><li>HTML e CSS</li><li>Bash</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-reveal style="--rd:1">
+          <h3><span>B</span>IA</h3>
+          <ul>
+            <li class="is-main">LLMs locais</li><li class="is-main">Agentes de IA</li><li>Skills de agentes</li><li>Servidores MCP</li><li>llama.cpp</li><li>whisper.cpp</li><li>RAG</li><li>Text-to-SQL</li><li>OpenRouter</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-reveal style="--rd:2">
+          <h3><span>C</span>Web e dados</h3>
+          <ul>
+            <li>Node.js</li><li>React</li><li>Spring Boot</li><li>APIs REST</li><li>Streamlit</li><li>D3.js</li><li>Web Audio API</li><li>Pandas</li><li>Databricks</li><li>NetworkX</li><li>Excel</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-reveal style="--rd:3">
+          <h3><span>D</span>Ferramentas</h3>
+          <ul>
+            <li class="is-main">Linux / Unix</li><li class="is-main">Docker</li><li>Git</li><li>GitHub Actions</li><li>n8n</li><li>PyAutoGUI</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-reveal style="--rd:4">
+          <h3><span>E</span>Pessoal</h3>
+          <ul>
+            <li>Trabalho em equipe</li><li>Liderança</li><li>Pensamento crítico</li><li>Resolução de problemas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAJETÓRIA -->
+  <section class="section" id="trajetoria">
+    <div class="wrap grid">
+      <p class="label" data-reveal><span>04</span><b data-scramble>Trajetória</b></p>
+      <div class="col-main">
+        <h2 class="title" data-split>De onde eu <em>venho</em></h2>
+        <ol class="timeline" data-timeline>
+          <li class="tl-item" data-reveal>
+            <p class="tl-when mono">2024 — 2029</p>
+            <div class="tl-body">
+              <h3>Engenharia da Computação</h3>
+              <p class="tl-where">Universidade de Pernambuco (UPE), Escola Politécnica <span class="tag">cursando</span></p>
+              <p>Na disciplina de Teoria dos Grafos participei da Equipe Astro, modelando o problema da grade horária da universidade.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <p class="tl-when mono">2026</p>
+            <div class="tl-body">
+              <h3>RocketLab 2026.2</h3>
+              <p class="tl-where">Visagio</p>
+              <p>Programa da Visagio com trilhas de dados e desenvolvimento. Foi lá que fiz a arquitetura medalhão do CineData no Databricks, o agente Text-to-SQL com LLMs e o CineLab, um site full-stack.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <p class="tl-when mono">2022</p>
+            <div class="tl-body">
+              <h3>Curso de Inglês</h3>
+              <p class="tl-where">Britanic</p>
+              <p>Curso completo, com certificado de conclusão.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <p class="tl-when mono">2020 — 2023</p>
+            <div class="tl-body">
+              <h3>Ensino Médio</h3>
+              <p class="tl-where">Colégio Cognitivo</p>
+              <p>Ensino médio completo.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- LABORATÓRIO -->
+  <section class="section" id="lab">
+    <div class="wrap grid">
+      <p class="label" data-reveal><span>05</span><b data-scramble>Laboratório</b></p>
+      <div class="col-main">
+        <div class="section-head">
+          <h2 class="title" data-split>Algoritmos, <em>ao vivo</em></h2>
+          <p class="section-sub" data-reveal>Dois visualizadores que vieram do PortfolioXP, redesenhados para cá. No grid, arraste para desenhar paredes ou mover o início e o fim.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="lab" data-lab data-reveal>
+        <div class="lab-tabs" role="tablist" aria-label="Visualizadores">
+          <button class="lab-tab" role="tab" type="button" id="tab-path" aria-selected="true" aria-controls="panel-path">Busca de caminhos</button>
+          <button class="lab-tab" role="tab" type="button" id="tab-sort" aria-selected="false" aria-controls="panel-sort" tabindex="-1">Ordenação</button>
+          <span class="lab-tab-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="lab-panel" role="tabpanel" id="panel-path" aria-labelledby="tab-path">
+          <div class="lab-bar">
+            <div class="seg" role="radiogroup" aria-label="Algoritmo de busca" data-path-algo>
+              <button type="button" role="radio" aria-checked="false" data-v="bfs">BFS</button>
+              <button type="button" role="radio" aria-checked="false" data-v="dfs">DFS</button>
+              <button type="button" role="radio" aria-checked="false" data-v="dijkstra">Dijkstra</button>
+              <button type="button" role="radio" aria-checked="true" data-v="astar">A*</button>
+            </div>
+            <div class="seg" role="radiogroup" aria-label="Tipo de mapa" data-path-map>
+              <button type="button" role="radio" aria-checked="true" data-v="maze">Labirinto</button>
+              <button type="button" role="radio" aria-checked="false" data-v="field">Campo com lama</button>
+            </div>
+            <div class="lab-actions">
+              <button class="btn btn-sm" type="button" data-path-new>Novo mapa</button>
+              <button class="btn btn-sm btn-solid" type="button" data-path-run>Buscar</button>
+            </div>
+          </div>
+          <div class="lab-stage">
+            <canvas class="lab-canvas" data-path-canvas aria-label="Grid da busca de caminhos" role="img"></canvas>
+          </div>
+          <div class="lab-foot mono">
+            <span>Visitados <b data-path-visited>0</b></span>
+            <span>Passos <b data-path-steps>—</b></span>
+            <span>Custo <b data-path-cost>—</b></span>
+            <span class="lab-legend"><i class="lg-start"></i>início <i class="lg-end"></i>fim <i class="lg-mud"></i>lama (custo 5)</span>
+          </div>
+        </div>
+
+        <div class="lab-panel" role="tabpanel" id="panel-sort" aria-labelledby="tab-sort" hidden>
+          <div class="lab-bar">
+            <div class="seg" role="radiogroup" aria-label="Algoritmo de ordenação" data-sort-algo>
+              <button type="button" role="radio" aria-checked="false" data-v="bubble">Bubble</button>
+              <button type="button" role="radio" aria-checked="false" data-v="insertion">Insertion</button>
+              <button type="button" role="radio" aria-checked="false" data-v="selection">Selection</button>
+              <button type="button" role="radio" aria-checked="true" data-v="merge">Merge</button>
+              <button type="button" role="radio" aria-checked="false" data-v="quick">Quick</button>
+              <button type="button" role="radio" aria-checked="false" data-v="heap">Heap</button>
+            </div>
+            <label class="speed mono">Velocidade <input type="range" min="1" max="10" value="5" data-sort-speed></label>
+            <div class="lab-actions">
+              <button class="btn btn-sm" type="button" data-sort-shuffle>Embaralhar</button>
+              <button class="btn btn-sm btn-solid" type="button" data-sort-run>Ordenar</button>
+            </div>
+          </div>
+          <div class="lab-stage">
+            <canvas class="lab-canvas" data-sort-canvas aria-label="Barras da ordenação" role="img"></canvas>
+          </div>
+          <div class="lab-foot mono">
+            <span>Comparações <b data-sort-cmp>0</b></span>
+            <span>Escritas <b data-sort-writes>0</b></span>
+            <span>Complexidade <b data-sort-big>O(n log n)</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contact" id="contato">
+    <div class="wrap grid">
+      <p class="label" data-reveal><span>06</span><b data-scramble>Contato</b></p>
+      <div class="col-main">
+        <h2 class="contact-title" data-split>Vamos <em>conversar.</em></h2>
+        <p class="section-sub" data-reveal>Quer falar sobre um projeto, uma vaga ou IA local? É só escrever.</p>
+        <div class="mail" data-reveal>
+          <a class="mail-link" href="mailto:lemt99@gmail.com" data-cursor="escrever">lemt99@gmail.com</a>
+          <button class="btn btn-sm" type="button" data-copy="lemt99@gmail.com" data-magnetic><span>Copiar</span></button>
+        </div>
+        <ul class="contact-list">
+          <li data-reveal><a href="https://www.linkedin.com/in/lucas-eduardo-melo-tenorio-05326a311/" target="_blank" rel="noopener"><span>LinkedIn</span><small>lucas-eduardo-melo-tenorio</small><i>↗</i></a></li>
+          <li data-reveal style="--rd:1"><a href="https://github.com/LucassTml" target="_blank" rel="noopener"><span>GitHub</span><small>LucassTml</small><i>↗</i></a></li>
+          <li data-reveal style="--rd:2"><a href="tel:+5581991615061"><span>Telefone</span><small>(81) 99161-5061</small><i>↗</i></a></li>
+          <li data-reveal style="--rd:3"><a href="curriculo/"><span>Currículo</span><small>edição 1996, em HTML puro</small><i>→</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <p class="mono">Outras versões</p>
+      <a class="link-arrow" href="https://lucasstml.github.io/PortfolioXP/" target="_blank" rel="noopener">PortfolioXP, estilo Windows XP <i>↗</i></a>
+      <a class="link-arrow" href="curriculo/">Currículo, edição 1996 <i>→</i></a>
+    </div>
+    <p class="wordmark" aria-hidden="true" data-wordmark><span>Lucas</span> <em>Melo</em></p>
+    <div class="footer-bottom mono">
+      <span>© 2026 Lucas Melo</span>
+      <span>HTML, CSS e JavaScript puros — sem frameworks</span>
+      <span>Recife <time data-clock>--:--</time></span>
+      <a href="#topo" data-roll>Topo ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Paleta de comandos -->
+<div class="palette" data-palette hidden>
+  <div class="palette-backdrop" data-palette-close></div>
+  <div class="palette-box" role="dialog" aria-modal="true" aria-label="Paleta de comandos">
+    <div class="palette-input">
+      <span class="mono" aria-hidden="true">→</span>
+      <input type="text" placeholder="Ir para, abrir projeto, copiar e-mail…" aria-label="Buscar comando" aria-controls="palette-list" aria-autocomplete="list" autocomplete="off" spellcheck="false" data-palette-input>
+      <kbd>esc</kbd>
+    </div>
+    <ul class="palette-list" id="palette-list" role="listbox" data-palette-list></ul>
+    <div class="palette-foot mono"><span>↑ ↓ navegar</span><span>↵ abrir</span><span>esc fechar</span></div>
+  </div>
+</div>
+
+<div class="toast mono" role="status" aria-live="polite" data-toast></div>
+
+</body>
+</html>

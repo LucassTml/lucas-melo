@@ -1,0 +1,50 @@
+# Publica o site no GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Roda a cada push no main
+  push:
+    branches: ["main"]
+
+  # Também dá para rodar na mão pela aba Actions
+  workflow_dispatch:
+
+# Permissões do GITHUB_TOKEN para publicar no GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Um deploy por vez; os que chegarem no meio esperam, sem cancelar o que está rodando
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Empacota o site. O deploy fica num job separado de propósito: quando os dois
+  # rodavam no mesmo job, o deploy começava meio segundo depois do upload e às vezes
+  # falhava com 'No artifacts named "github-pages" were found', porque o GitHub
+  # ainda não listava o artefato recém-enviado.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          # Envia o repositório inteiro (a pasta .git e a .github ficam de fora)
+          path: '.'
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
