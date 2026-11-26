@@ -1,6 +1,6 @@
 /* ==========================================================================
    Lucas Melo — portfólio: interações
-   Abertura, cursor, revelações, campo de pontos do hero, prévias dos projetos,
+   Abertura, revelações, campo de pontos do hero, prévias dos projetos,
    GitHub ao vivo, faixa reativa à rolagem e paleta de comandos.
    ========================================================================== */
 (() => {
@@ -200,36 +200,6 @@
       }, 200);
     };
     requestAnimationFrame(step);
-  }
-
-  /* ---------- Cursor ---------- */
-  function cursor() {
-    if (!finePointer || reduce) return;
-    const wrap = $('.cursor');
-    const ring = $('.cursor-ring');
-    const dot = $('.cursor-dot');
-    const label = $('.cursor-label');
-    if (!wrap) return;
-    root.classList.add('has-cursor');
-    let rx = mouse.x, ry = mouse.y;
-    const SEL = 'a, button, [data-cursor], input, label, select';
-    document.addEventListener('pointerover', e => {
-      const t = e.target.closest ? e.target.closest(SEL) : null;
-      ring.classList.toggle('is-link', !!t);
-      const txt = t && t.dataset.cursor ? t.dataset.cursor : '';
-      if (txt) label.textContent = txt;
-      ring.classList.toggle('has-label', !!txt);
-    });
-    addEventListener('pointerdown', () => ring.classList.add('is-down'));
-    addEventListener('pointerup', () => ring.classList.remove('is-down'));
-    root.addEventListener('mouseleave', () => wrap.classList.add('is-hidden'));
-    root.addEventListener('mouseenter', () => wrap.classList.remove('is-hidden'));
-    tasks.add(() => {
-      rx = lerp(rx, mouse.x, .2);
-      ry = lerp(ry, mouse.y, .2);
-      dot.style.translate = `${mouse.x}px ${mouse.y}px`;
-      ring.style.translate = `${rx.toFixed(2)}px ${ry.toFixed(2)}px`;
-    });
   }
 
   /* ---------- Navegação, progresso e menu ---------- */
@@ -948,10 +918,6 @@
 
     const go = id => () => smoothTo(document.getElementById(id));
     const open = url => () => window.open(url, '_blank', 'noopener');
-    const labRun = (tab, algo) => () => {
-      smoothTo(document.getElementById('lab'));
-      document.dispatchEvent(new CustomEvent('lab:run', { detail: { tab, algo } }));
-    };
     const mailLink = $('.mail-link');
 
     const cmds = [
@@ -959,8 +925,7 @@
       { t: 'Ir para Projetos', g: 'Seção', i: '02', run: go('projetos') },
       { t: 'Ir para Habilidades', g: 'Seção', i: '03', run: go('habilidades') },
       { t: 'Ir para Trajetória', g: 'Seção', i: '04', run: go('trajetoria') },
-      { t: 'Ir para o Laboratório', g: 'Seção', i: '05', run: go('lab') },
-      { t: 'Ir para Contato', g: 'Seção', i: '06', run: go('contato') },
+      { t: 'Ir para Contato', g: 'Seção', i: '05', run: go('contato') },
       ...$$('.project').map(li => ({
         t: $('.p-name', li).textContent,
         k: `${$('.p-stack', li).textContent} ${$('.p-cat', li).textContent} projeto`,
@@ -968,10 +933,6 @@
       })),
       { t: 'Copiar e-mail', k: 'email contato', g: 'Ação', i: '@', run: () => copyText(CONTACT) },
       { t: 'Escrever um e-mail', k: 'email contato mensagem', g: 'Ação', i: '✉', run: () => { if (mailLink) mailLink.click(); } },
-      { t: 'Rodar A* no labirinto', k: 'astar busca caminho algoritmo', g: 'Lab', i: '▸', run: labRun('path', 'astar') },
-      { t: 'Rodar DFS no labirinto', k: 'profundidade busca algoritmo', g: 'Lab', i: '▸', run: labRun('path', 'dfs') },
-      { t: 'Ordenar com Quick Sort', k: 'ordenacao algoritmo', g: 'Lab', i: '▸', run: labRun('sort', 'quick') },
-      { t: 'Ordenar com Merge Sort', k: 'ordenacao algoritmo', g: 'Lab', i: '▸', run: labRun('sort', 'merge') },
       { t: 'Abrir GitHub', k: 'codigo repositorios', g: 'Link', i: '↗', run: open(`https://github.com/${GH_USER}`) },
       { t: 'Abrir LinkedIn', k: 'perfil', g: 'Link', i: '↗', run: open(LINKEDIN) },
       { t: 'Currículo, edição 1996', k: 'cv curriculo retro anos 90 html', g: 'Versão', i: '→', run: () => { location.href = 'curriculo/'; } },
@@ -1080,7 +1041,6 @@
   $$('[data-copy]').forEach(b => b.addEventListener('click', () => copyText(b.dataset.copy)));
 
   /* ---------- Início ---------- */
-  cursor();
   nav();
   menu();
   reveals();

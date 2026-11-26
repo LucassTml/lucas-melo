@@ -29,15 +29,11 @@ Tudo é **HTML, CSS e JavaScript puros**, sem biblioteca, framework ou etapa de 
 
 - **Abertura** com contador e o nome subindo letra por letra (só na primeira visita da sessão).
 - **Campo de pontos** no fundo do hero, com física de mola: os pontos fogem do cursor e um clique solta uma onda.
-- **Cursor próprio** que muda de tamanho e mostra uma palavra sobre links e projetos.
 - **Prévias geradas em canvas** para cada projeto ao passar o mouse: forma de onda para o Audian, terminal para o OpenlyAntigravity, SQL sendo escrito para o Text-to-SQL, grafo para o Overwatch DataMeta, camadas bronze/prata/ouro para o CineData e assim por diante.
 - **Filtros** por área com a lista se reorganizando, e cada projeto abre com descrição e links.
 - **GitHub ao vivo:** os repositórios atualizados recentemente e o total de repositórios vêm da API do GitHub (com cache na sessão).
 - **Faixa de tecnologias** que acelera, inverte e inclina conforme a velocidade da rolagem.
-- **Laboratório** com dois visualizadores que vieram do PortfolioXP:
-  - Busca de caminhos com BFS, DFS, Dijkstra e A\*, em labirinto ou num campo com lama (custo 5). Dá para desenhar paredes e arrastar o início e o fim, e o caminho é recalculado na hora.
-  - Ordenação com Bubble, Insertion, Selection, Merge, Quick e Heap, contando comparações e escritas.
-- **Paleta de comandos** (`Ctrl` + `K`, `⌘` + `K` ou `/`): ir para seções, abrir projetos, copiar o e-mail, rodar algoritmos do laboratório.
+- **Paleta de comandos** (`Ctrl` + `K`, `⌘` + `K` ou `/`): ir para seções, abrir projetos, copiar o e-mail, abrir as outras versões.
 - **Relógio de Recife** no topo e no rodapé.
 - Respeita `prefers-reduced-motion`: com menos movimento, as animações são desligadas e o conteúdo aparece direto.
 
@@ -46,10 +42,9 @@ Tudo é **HTML, CSS e JavaScript puros**, sem biblioteca, framework ou etapa de 
 ```
 index.html             conteúdo do portfólio (textos, projetos, trajetória)
 assets/css/style.css   cores, tipografia, layout e animações
-assets/js/main.js      abertura, cursor, revelações, hero, prévias, GitHub, paleta
-assets/js/lab.js       busca de caminhos e ordenação
+assets/js/main.js      abertura, revelações, hero, prévias, GitHub, paleta
 assets/img/favicon.svg
-curriculo/index.html   o currículo em HTML de 1996
+curriculo/index.html   o currículo, página pessoal à moda antiga
 ```
 
 Para adicionar um projeto, copie um `<li class="project">` em `index.html` e, se quiser uma prévia, crie uma cena com o mesmo nome do `data-preview` em `SCENES`, no `main.js`.

@@ -27,9 +27,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
-<script src="assets/js/main.js?v=1.0.0" defer></script>
-<script src="assets/js/lab.js?v=1.0.0" defer></script>
+<link rel="stylesheet" href="assets/css/style.css?v=1.1.0">
+<script src="assets/js/main.js?v=1.1.0" defer></script>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -58,12 +57,6 @@
   </div>
 </div>
 
-<!-- Cursor -->
-<div class="cursor" aria-hidden="true">
-  <div class="cursor-ring"><span class="cursor-label"></span></div>
-  <div class="cursor-dot"></div>
-</div>
-
 <div class="progress" aria-hidden="true"></div>
 
 <!-- Navegação -->
@@ -74,11 +67,10 @@
     <a href="#projetos" data-roll>Projetos</a>
     <a href="#habilidades" data-roll>Habilidades</a>
     <a href="#trajetoria" data-roll>Trajetória</a>
-    <a href="#lab" data-roll>Lab</a>
     <a href="#contato" data-roll>Contato</a>
   </nav>
   <div class="nav-right">
-    <a class="nav-cv" href="curriculo/" data-roll data-cursor="1996">CV ’96</a>
+    <a class="nav-cv" href="curriculo/" data-roll>CV ’96</a>
     <button class="kbd" type="button" data-palette-open aria-label="Abrir a paleta de comandos (Ctrl + K)"><span data-mod>Ctrl</span> K</button>
     <span class="clock" title="Hora local em Recife"><span class="clock-dot"></span>REC <time data-clock>--:--</time></span>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn><span>Menu</span><i></i></button>
@@ -91,8 +83,7 @@
     <a href="#projetos" style="--i:1"><small>02</small>Projetos</a>
     <a href="#habilidades" style="--i:2"><small>03</small>Habilidades</a>
     <a href="#trajetoria" style="--i:3"><small>04</small>Trajetória</a>
-    <a href="#lab" style="--i:4"><small>05</small>Laboratório</a>
-    <a href="#contato" style="--i:5"><small>06</small>Contato</a>
+    <a href="#contato" style="--i:4"><small>05</small>Contato</a>
   </nav>
   <div class="menu-foot">
     <a href="curriculo/">Currículo, edição 1996 →</a>
@@ -126,7 +117,7 @@
         </ul>
         <div class="hero-cta hero-in" style="--d:6">
           <a class="btn btn-solid" href="#projetos" data-magnetic><span>Ver projetos</span></a>
-          <a class="btn" href="curriculo/" data-magnetic data-cursor="1996"><span>Currículo ’96</span></a>
+          <a class="btn" href="curriculo/" data-magnetic><span>Currículo ’96</span></a>
         </div>
       </div>
       <a class="scroll-cue hero-in" style="--d:7" href="#sobre" aria-label="Rolar até Sobre"><span class="mono">Role</span><span class="scroll-line"></span></a>
@@ -181,7 +172,7 @@
       <ol class="projects" data-projects>
         <li class="project" data-cat="ia" data-preview="audian" id="projeto-audian">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-audian" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-audian">
               <span class="p-num">01</span><span class="p-name">Audian</span><span class="p-cat">IA e agentes</span><span class="p-stack">Rust · Whisper · Qwen</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-audian">
@@ -194,7 +185,7 @@
         </li>
         <li class="project" data-cat="ia" data-preview="antigravity" id="projeto-openlyantigravity">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-antigravity" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-antigravity">
               <span class="p-num">02</span><span class="p-name">OpenlyAntigravity</span><span class="p-cat">IA e agentes</span><span class="p-stack">JavaScript · OpenCode</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-antigravity">
@@ -207,7 +198,7 @@
         </li>
         <li class="project" data-cat="ia" data-preview="texttosql" id="projeto-text-to-sql">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-texttosql" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-texttosql">
               <span class="p-num">03</span><span class="p-name">GenAI Text-to-SQL</span><span class="p-cat">IA e agentes</span><span class="p-stack">Python · LLMs · Streamlit</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-texttosql">
@@ -220,7 +211,7 @@
         </li>
         <li class="project" data-cat="web" data-preview="ressonancia" id="projeto-ressonancia">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-ressonancia" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-ressonancia">
               <span class="p-num">04</span><span class="p-name">Ressonância</span><span class="p-cat">Web</span><span class="p-stack">TypeScript · MDX · Web Audio</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-ressonancia">
@@ -233,7 +224,7 @@
         </li>
         <li class="project" data-cat="web" data-preview="overwatch" id="projeto-overwatch">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-overwatch" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-overwatch">
               <span class="p-num">05</span><span class="p-name">Overwatch DataMeta</span><span class="p-cat">Web</span><span class="p-stack">D3.js · NetworkX</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-overwatch">
@@ -246,7 +237,7 @@
         </li>
         <li class="project" data-cat="web" data-preview="cinelab" id="projeto-cinelab">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-cinelab" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-cinelab">
               <span class="p-num">06</span><span class="p-name">CineLab</span><span class="p-cat">Web</span><span class="p-stack">React · FastAPI · SQLite</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-cinelab">
@@ -259,7 +250,7 @@
         </li>
         <li class="project" data-cat="web" data-preview="portfolioxp" id="projeto-portfolioxp">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-portfolioxp" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-portfolioxp">
               <span class="p-num">07</span><span class="p-name">PortfolioXP</span><span class="p-cat">Web</span><span class="p-stack">HTML · CSS · JavaScript</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-portfolioxp">
@@ -272,7 +263,7 @@
         </li>
         <li class="project" data-cat="dados" data-preview="cinedata" id="projeto-cinedata">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-cinedata" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-cinedata">
               <span class="p-num">08</span><span class="p-name">CineData Analytics</span><span class="p-cat">Dados</span><span class="p-stack">Databricks · Python</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-cinedata">
@@ -285,7 +276,7 @@
         </li>
         <li class="project" data-cat="jogos" data-preview="tower" id="projeto-tower-defense">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-tower" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-tower">
               <span class="p-num">09</span><span class="p-name">Tower Defense</span><span class="p-cat">Jogos e algoritmos</span><span class="p-stack">Java · Swing</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-tower">
@@ -298,7 +289,7 @@
         </li>
         <li class="project" data-cat="jogos" data-preview="grade" id="projeto-grade-horaria">
           <div class="project-clip">
-            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-grade" data-cursor="abrir">
+            <button class="project-row" type="button" aria-expanded="false" aria-controls="pd-grade">
               <span class="p-num">10</span><span class="p-name">Grade Horária UPE</span><span class="p-cat">Jogos e algoritmos</span><span class="p-stack">Teoria dos Grafos</span><span class="p-icon" aria-hidden="true"></span>
             </button>
             <div class="project-detail" id="pd-grade">
@@ -431,91 +422,15 @@
     </div>
   </section>
 
-  <!-- LABORATÓRIO -->
-  <section class="section" id="lab">
-    <div class="wrap grid">
-      <p class="label" data-reveal><span>05</span><b data-scramble>Laboratório</b></p>
-      <div class="col-main">
-        <div class="section-head">
-          <h2 class="title" data-split>Algoritmos, <em>ao vivo</em></h2>
-          <p class="section-sub" data-reveal>Dois visualizadores que vieram do PortfolioXP, redesenhados para cá. No grid, arraste para desenhar paredes ou mover o início e o fim.</p>
-        </div>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="lab" data-lab data-reveal>
-        <div class="lab-tabs" role="tablist" aria-label="Visualizadores">
-          <button class="lab-tab" role="tab" type="button" id="tab-path" aria-selected="true" aria-controls="panel-path">Busca de caminhos</button>
-          <button class="lab-tab" role="tab" type="button" id="tab-sort" aria-selected="false" aria-controls="panel-sort" tabindex="-1">Ordenação</button>
-          <span class="lab-tab-line" aria-hidden="true"></span>
-        </div>
-
-        <div class="lab-panel" role="tabpanel" id="panel-path" aria-labelledby="tab-path">
-          <div class="lab-bar">
-            <div class="seg" role="radiogroup" aria-label="Algoritmo de busca" data-path-algo>
-              <button type="button" role="radio" aria-checked="false" data-v="bfs">BFS</button>
-              <button type="button" role="radio" aria-checked="false" data-v="dfs">DFS</button>
-              <button type="button" role="radio" aria-checked="false" data-v="dijkstra">Dijkstra</button>
-              <button type="button" role="radio" aria-checked="true" data-v="astar">A*</button>
-            </div>
-            <div class="seg" role="radiogroup" aria-label="Tipo de mapa" data-path-map>
-              <button type="button" role="radio" aria-checked="true" data-v="maze">Labirinto</button>
-              <button type="button" role="radio" aria-checked="false" data-v="field">Campo com lama</button>
-            </div>
-            <div class="lab-actions">
-              <button class="btn btn-sm" type="button" data-path-new>Novo mapa</button>
-              <button class="btn btn-sm btn-solid" type="button" data-path-run>Buscar</button>
-            </div>
-          </div>
-          <div class="lab-stage">
-            <canvas class="lab-canvas" data-path-canvas aria-label="Grid da busca de caminhos" role="img"></canvas>
-          </div>
-          <div class="lab-foot mono">
-            <span>Visitados <b data-path-visited>0</b></span>
-            <span>Passos <b data-path-steps>—</b></span>
-            <span>Custo <b data-path-cost>—</b></span>
-            <span class="lab-legend"><i class="lg-start"></i>início <i class="lg-end"></i>fim <i class="lg-mud"></i>lama (custo 5)</span>
-          </div>
-        </div>
-
-        <div class="lab-panel" role="tabpanel" id="panel-sort" aria-labelledby="tab-sort" hidden>
-          <div class="lab-bar">
-            <div class="seg" role="radiogroup" aria-label="Algoritmo de ordenação" data-sort-algo>
-              <button type="button" role="radio" aria-checked="false" data-v="bubble">Bubble</button>
-              <button type="button" role="radio" aria-checked="false" data-v="insertion">Insertion</button>
-              <button type="button" role="radio" aria-checked="false" data-v="selection">Selection</button>
-              <button type="button" role="radio" aria-checked="true" data-v="merge">Merge</button>
-              <button type="button" role="radio" aria-checked="false" data-v="quick">Quick</button>
-              <button type="button" role="radio" aria-checked="false" data-v="heap">Heap</button>
-            </div>
-            <label class="speed mono">Velocidade <input type="range" min="1" max="10" value="5" data-sort-speed></label>
-            <div class="lab-actions">
-              <button class="btn btn-sm" type="button" data-sort-shuffle>Embaralhar</button>
-              <button class="btn btn-sm btn-solid" type="button" data-sort-run>Ordenar</button>
-            </div>
-          </div>
-          <div class="lab-stage">
-            <canvas class="lab-canvas" data-sort-canvas aria-label="Barras da ordenação" role="img"></canvas>
-          </div>
-          <div class="lab-foot mono">
-            <span>Comparações <b data-sort-cmp>0</b></span>
-            <span>Escritas <b data-sort-writes>0</b></span>
-            <span>Complexidade <b data-sort-big>O(n log n)</b></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CONTATO -->
   <section class="section contact" id="contato">
     <div class="wrap grid">
-      <p class="label" data-reveal><span>06</span><b data-scramble>Contato</b></p>
+      <p class="label" data-reveal><span>05</span><b data-scramble>Contato</b></p>
       <div class="col-main">
         <h2 class="contact-title" data-split>Vamos <em>conversar.</em></h2>
         <p class="section-sub" data-reveal>Quer falar sobre um projeto, uma vaga ou IA local? É só escrever.</p>
         <div class="mail" data-reveal>
-          <a class="mail-link" href="mailto:lemt99@gmail.com" data-cursor="escrever">lemt99@gmail.com</a>
+          <a class="mail-link" href="mailto:lemt99@gmail.com">lemt99@gmail.com</a>
           <button class="btn btn-sm" type="button" data-copy="lemt99@gmail.com" data-magnetic><span>Copiar</span></button>
         </div>
         <ul class="contact-list">
